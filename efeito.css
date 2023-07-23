@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box_hover{
+    width: 400px;
+    height: 400px;
+    background-color: chocolate;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.box-bur{
+    width: 100%;
+    height:100%;
+    background-image: url(https://img.freepik.com/vetores-premium/paisagem-plana-de-praia-ao-por-do-sol-com-palmeiras_116220-205.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: filter, transform 0.2s;
+    cursor:pointer;
+}
+
+.box_hover:hover .box-bur{
+    filter: blur(3px);
+    transform: scale(1.1);
+}
