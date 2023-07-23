@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-dregade{
+    width: 100%;
+    padding:450px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to left,rgb(0, 0, 0), rgb(156, 0, 0), rgb(2, 2, 88), rgb(117, 7, 7), rgb(10, 7, 10));
+    background-size: 500% 100%;
+    animation:degrade-animado 5s infinite alternate;
+}
+.box-dregade h1{
+    color: aliceblue;
+    font-weight: lighter;
+}
+@keyframes degrade-animado{
+0%{
+    background-position-x:0%;
+}
+100%{
+    background-position-x:100% ;
+    }   
+}
